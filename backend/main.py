@@ -1,9 +1,8 @@
+from backend.agent import process_query
+from backend.scheduler import check_availability, book_appointment
+from backend.memory import get_session, set_session
+from backend.services.language import detect_language, get_response
 from fastapi import FastAPI
-from agent import process_query
-from scheduler import check_availability, book_appointment
-from memory import get_session, set_session
-from services.language import detect_language, get_response
-
 app = FastAPI()
 
 
